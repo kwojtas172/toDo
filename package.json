@@ -23,11 +23,22 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-react": "^7.9.4",
     "css-loader": "^3.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.20",
+    "react-id-generator": "^3.0.0",
     "style-loader": "^1.1.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }
