@@ -1,0 +1,116 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(4, 27, 61);
+  min-height: 40rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    color: rgb(132, 134, 138);
+    border: 0.25rem solid rgb(132, 134, 138);
+    border-radius: 0.5rem;
+    width: 33rem;
+    margin: 0 auto;
+
+    input {
+      height: 2rem;
+      width: 30rem;
+      margin: 0.5rem;
+      border-radius: 0.5rem;
+      border: 0.15rem solid rgb(28, 86, 173);
+      color: rgb(16, 55, 114);
+      font-weight: 600;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .btn-add {
+      height: 2rem;
+      width: 15rem;
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+      border: 0.15rem solid rgb(28, 86, 173);
+      color: rgb(16, 55, 114);
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(28, 86, 173);
+        border: 0.15rem solid rgb(132, 134, 138);
+        color: rgb(132, 134, 138);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .list-tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    color: rgb(132, 134, 138);
+    border-radius: 0.5rem;
+    width: 33rem;
+    margin: 0 auto;
+    font-weight: 600;
+
+    .open-task {
+      list-style-type: none;
+      border: 0.25rem solid rgb(4, 27, 61);
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-left: -2.5rem;
+      margin-bottom: 3rem;
+      background-color: rgb(255, 255, 255);
+      color: rgb(4, 27, 61);
+      min-width: 30rem;
+      position: relative;
+
+      &.finished {
+        background-color: rgb(92, 158, 90);
+        text-decoration: line-through;
+        text-decoration-color: rgb(134, 13, 60);
+        font-weight: 900;
+      }
+
+      .btn-finish {
+        width: 7rem;
+        background-color: rgb(16, 55, 114);
+        border: 0.15rem solid rgb(16, 55, 114);
+        border-radius: 1rem;
+        color: rgb(132, 134, 138);
+        font-weight: 600;
+        position: absolute;
+        right: 1rem;
+        padding: 0.5rem;
+        margin: -0.5rem;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(16, 55, 114);
+          background-color: rgb(132, 134, 138);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

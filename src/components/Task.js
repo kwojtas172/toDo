@@ -15,7 +15,7 @@ class Task extends React.Component {
     render() {
         return (
             this.props.tasks.map(task => {
-                return <li className={task.status == "finished" ? "open-task finished" : "open-task"} key={task.id}><span><p>{task.title}</p><p>{task.description}</p></span><button id={task.id} onClick={this.handleClick} className="btn-finish">{task.status == "finished" ? "Cofnij" : "Zakończ"}</button></li>
+                return <li className={task.status == "finished" ? "open-task finished" : "open-task"} key={task.id}><span><p>{task.title}</p><p>{task.description}</p></span><button id={task.id} onClick={this.handleClick} className="btn-finish">{task.status == "finished" ? "Undo" : "Finish"}</button></li>
             })
         )
     }

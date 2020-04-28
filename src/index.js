@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './main.scss';
+import './scss/main.scss';
 import Form from './components/Form';
 import Tasks from './components/Tasks';
 
