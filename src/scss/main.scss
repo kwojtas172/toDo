@@ -111,6 +111,29 @@
           outline: none;
         }
       }
+
+      .btn-delete {
+        width: 7rem;
+        background-color: rgb(132, 134, 138);
+        border: 0.15rem solid rgb(132, 134, 138);
+        border-radius: 1rem;
+        color: rgb(16, 55, 114);
+        font-weight: 600;
+        // position: absolute;
+        right: 1rem;
+        padding: 0.5rem;
+        margin: -0.5rem;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(132, 134, 138);
+          background-color: rgb(16, 55, 114);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 }

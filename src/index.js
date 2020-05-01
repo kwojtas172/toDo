@@ -33,11 +33,21 @@ class ToDo extends React.Component {
         })
     }
 
+    deleteTask = taskToDelete => {
+        const tempArr = [...this.state.arrOfTasks];
+        const modifiedArr = tempArr.filter(task => {
+            return task.title != taskToDelete.title
+        })
+        this.setState({
+            arrOfTasks: modifiedArr
+        })
+    }
+
     render() {
         return (
             <main className="main-content">
                 <Form addTask={this.addTask} />
-                <Tasks tasks={this.state.arrOfTasks} finish={this.finishTask} />
+                <Tasks tasks={this.state.arrOfTasks} finish={this.finishTask} delete={this.deleteTask} />
             </main>
         )
     }

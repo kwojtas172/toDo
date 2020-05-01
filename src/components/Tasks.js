@@ -8,7 +8,7 @@ class Tasks extends React.Component {
             <div className="list-tasks">
                 {this.props.tasks.length > 0 && <h2>Task to do</h2>}
                 <ul>
-                    <Task tasks={this.props.tasks} finish={this.props.finish} />
+                    <Task tasks={this.props.tasks} finish={this.props.finish} delete={this.props.delete} />
                 </ul>
             </div>
         )
