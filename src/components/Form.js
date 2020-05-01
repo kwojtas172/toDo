@@ -34,7 +34,7 @@ class Form extends React.Component {
         return (
             <form onSubmit={this.handleOnSubmit} className="form-content">
                 <h2>Create Task</h2>
-                <input type="text" onChange={this.handleChangeTitle} placeholder="Ttile"></input>
+                <input type="text" onChange={this.handleChangeTitle} placeholder="Title"></input>
                 <input type="text" onChange={this.handleChangeDesciption} placeholder="Description"></input>
                 <button className="btn-add">Add</button>
             </form>
